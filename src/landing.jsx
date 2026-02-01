@@ -9,6 +9,11 @@ import SplitText from "./components/SplitText.jsx";
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify'
+import jb from './assets/jb.png'
+import hpp from './assets/hpp.png'
+import tu from './assets/tu.png'
+import c from './assets/contact-me.svg'
+
 
 
 
@@ -199,7 +204,7 @@ const sendEmail = (e) => {
     
     {/* Content of Project 1 */}
     <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
-      <img src="../public/jb.png" alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
+      <img src={jb} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
       <h2 className="text-3xl font-bold text-green-400 mt-4">Jobs Bridge</h2>
       <p className="text-gray-400 mt-4 leading-relaxed">
         Jobs Bridge is a MERN stack platform that connects workers with employers. It provides secure profiles, easy job posting, and real-time communication.
@@ -223,7 +228,7 @@ const sendEmail = (e) => {
 
     {/* Project 2 */}
     <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
-      <img src="../public/hpp.png" alt="House Price Prediction" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
+      <img src={hpp} alt="House Price Prediction" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
       <h2 className="text-3xl font-bold text-green-400 mt-4">House Price Prediction</h2>
       <p className="text-gray-400 mt-4 leading-relaxed">
         A machine learning model that predicts house prices based on features like location, size, and amenities. Built with Python and Flask for backend integration.
@@ -247,7 +252,7 @@ const sendEmail = (e) => {
 
     {/* Project 3 */}
     <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
-      <img src="../public/tu.png" alt="TextUtils" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
+      <img src={tu} alt="TextUtils" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
       <h2 className="text-3xl font-bold text-green-400 mt-4">TextUtils</h2>
       <p className="text-gray-400 mt-4 leading-relaxed">
         A web application that allows users to manipulate text in various ways like counting words, characters, and converting text to uppercase or lowercase. Build for practice.
@@ -277,7 +282,7 @@ const sendEmail = (e) => {
       <section id='contact' className="bg-[#020617] min-h-screen pt-5 flex flex-col items-center justify-start">
         <h1 className="text-blue-600 font-semibold rounded-lg border py-3 px-3 text-4xl">Let's Connect</h1>
         <div className='w-full h-full flex lg:flex-row flex-col lg:p-7 gap-5  '>
-          <div className='flex items-center justify-center lg:p-8  lg:w-1/2'><img src="../public/contact-me.svg"  alt="" /></div>
+          <div className='flex items-center justify-center lg:p-8  lg:w-1/2'><img src={c}  alt="" /></div>
           <div className='text-white lg:p-8 lg:w-1/2'>
               <form ref={formRef} onSubmit={sendEmail} className='w-full flex flex-col gap-6 px-6'>
                 <div className='flex flex-col gap-3'>
