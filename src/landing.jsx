@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import LiquidEther from './components/background.jsx'
 import logo from './assets/logo.jpeg'
 import TextType from './components/typetext.jsx';
-import { FaWhatsapp, FaInstagram, FaLinkedin, FaGithub, FaArrowRight, FaEnvelope, FaCross, FaTimes } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaLinkedin, FaGithub, FaArrowRight, FaEnvelope, FaCross, FaTimes, FaDownload } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import Hunain from './assets/Hunain.jpg'
 import SplitText from "./components/SplitText.jsx";
@@ -363,6 +363,7 @@ const sendEmail = (e) => {
 
               
                 </div>
+                <a href="/Hunain-Tariq.pdf" download className="block flex gap-3 w-1/2 items-center justify-center text-center mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-200"><FaDownload size={25}/> Download CV</a>
                 <div className='mt-6'>
                   <h1 >
                     <SplitText
