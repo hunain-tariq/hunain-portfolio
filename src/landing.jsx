@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import LiquidEther from './components/background.jsx'
+import DarkVeil  from './components/background.jsx'
 import logo from './assets/logo.jpeg'
 import TextType from './components/typetext.jsx';
-import { FaWhatsapp, FaInstagram, FaLinkedin, FaGithub, FaArrowRight, FaEnvelope, FaCross, FaTimes, FaDownload } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaLinkedin, FaGithub, FaArrowRight, FaEnvelope, FaTimes, FaDownload } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import Hunain from './assets/Hunain.jpg'
 import SplitText from "./components/SplitText.jsx";
@@ -88,25 +88,13 @@ const sendEmail = (e) => {
         
       
         <div className="absolute inset-0 z-0 opacity-60">
-          <LiquidEther
-            colors={['#3b2cff', '#8b5cf6', '#ec4899']}
-            mouseForce={20}
-            cursorSize={100}
-            isViscous
-            viscous={30}
-            iterationsViscous={32}
-            iterationsPoisson={32}
-            resolution={0.5}
-            isBounce={false}
-            autoDemo
-            autoSpeed={0.5}
-            autoIntensity={2.2}
-            takeoverDuration={0.25}
-            autoResumeDelay={3000}
-            autoRampDuration={0.6}
-            color0="#5227FF"
-            color1="#FF9FFC"
-            color2="#B19EEF"
+          <DarkVeil
+            hueShift={0}
+            noiseIntensity={0}
+            scanlineIntensity={0}
+            speed={0.5}
+            scanlineFrequency={0}
+            warpAmount={0}
           />
         </div>
 
@@ -313,8 +301,10 @@ const sendEmail = (e) => {
 
         </div>
       </section>
-      <footer>
-
+      <footer className='mt-10 ' >
+        <div className='w-full bg-gray-900 text-white text-center py-4'>
+          <p>&copy; {new Date().getFullYear()} M Hunain Tariq. All rights reserved.</p>
+        </div>
       </footer>
 
 
