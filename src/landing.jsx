@@ -349,7 +349,10 @@ const sendEmail = (e) => {
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Python</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#ejs</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#c++</p>
+                  <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Git</p>
+                  <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Github</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#RESTFull Apis</p>
+
 
               
                 </div>
