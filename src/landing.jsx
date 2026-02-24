@@ -13,6 +13,8 @@ import jb from './assets/jb.png'
 import hpp from './assets/hpp.png'
 import tu from './assets/tu.png'
 import c from './assets/contact-me.svg'
+import image from './assets/image.png'
+import pvp from './assets/pvp.jpeg'
 
 
 
@@ -58,24 +60,32 @@ const sendEmail = (e) => {
 
       {/* First Section with LiquidEther */}
       <section className="relative h-screen overflow-hidden">
-            <nav className='flex items-center lg:justify-around justify-between p-6 absolute w-full z-50'>
+            <nav className='flex items-center lg:justify-around justify-between lg:p-6 p-3 absolute w-full z-50'>
 
                 <img src={logo} alt="Logo" className="rounded-full h-15 w-15 " />
-                <div className='flex items-center '>
+                <div className='flex  items-center '>
                     <Link 
                      to="projects" 
                      smooth={true} 
                      duration={800} 
-                     className="cursor-pointer px-5  text-lg  text-white hover:text-green-500 transition"
+                     className="cursor-pointer lg:px-5 px-3 text-lg  text-white hover:text-green-500 transition"
                      >
                       Projects
                     </Link>
 
                     <Link 
+                     to="experience" 
+                     smooth={true} 
+                     duration={800} 
+                     className="cursor-pointer lg:px-5 px-3 text-lg  text-white hover:text-green-500 transition"
+                     >
+                      Experience
+                    </Link>
+                     <Link 
                      to="contact" 
                      smooth={true} 
                      duration={800} 
-                     className="cursor-pointer px-5  text-lg  text-white hover:text-green-500 transition"
+                     className="cursor-pointer lg:px-5 px-3 text-lg  text-white hover:text-green-500 transition"
                      >
                       Contact
                     </Link>
@@ -111,7 +121,6 @@ const sendEmail = (e) => {
                         pauseDuration={1500}
                         showCursor
                         cursorCharacter="|"
-                        texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
                         deletingSpeed={50}
                         variableSpeedEnabled={false}
                         variableSpeedMin={60}
@@ -183,7 +192,7 @@ const sendEmail = (e) => {
   id="projects"
   className="bg-[#020617] min-h-screen flex flex-col mt-10 items-center justify-start px-5"
 >
-  <h1 className="text-blue-600 font-semibold rounded-lg border py-3 px-3 text-4xl">
+  <h1 className="text-blue-600 font-semibold rounded-lg mt-2 border py-3 px-3 text-4xl">
     My Projects
   </h1>
 
@@ -263,6 +272,52 @@ const sendEmail = (e) => {
     </div>
 
   </div>
+</section>
+
+<section
+  id="experience"
+  className="bg-[#020617] min-h-screen flex flex-col mt-12 items-center justify-start px-5"
+>
+  <h1 className="text-blue-600 font-semibold rounded-lg border mt-2 py-3 px-3 text-4xl">
+    Work Experience
+  </h1>
+
+  {/* Parent div wrapping all experience cards */}
+  <div className="w-full flex flex-wrap lg:flex-nowrap gap-8 mt-10 justify-center">
+    {/* 1 */}
+     <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
+      <img src={image} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
+      <h2 className="text-3xl font-bold text-green-400 mt-4">NHMP Internship</h2>
+      <p className="text-gray-400 mt-4 leading-relaxed">
+       
+       • Selected for Internship at National Highways & Motorway Police in the Operations Branch. <br/> • Assisted in maintaining and updating internal databases and digital records  <br/> • Participated in administrative tasks and learned about public sector workflow and reporting. <br/> • Observed and documented processes related to surveillance and data collection technologies.
+
+
+    </p>
+
+      <div className="mt-4   flex items-center justify-center px-3 py-1 text-md rounded-full bg-green-500/10 text-green-400 border border-green-500/20">
+          <h1>From June 2024 to August 2024 </h1>
+      </div>
+    </div>
+
+    {/* 2 */}
+<div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
+      <img src={pvp} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
+      <h2 className="text-3xl font-bold text-green-400 mt-4">PVP Internship</h2>
+      <p className="text-gray-400 mt-4 leading-relaxed">
+       
+        • Working as a Full Stack Developer Intern at Pakistan Venture Point.  <br/> • Developed and maintained full-stack web applications using MERN Stack (MongoDB, Express.js, React.js,
+Node.js). <br/> • Built responsive and user-friendly UI components using React and modern CSS frameworks like Tailwind CSS. <br/> • Integrated authentication & authorization (JWT-based login system)
+ <br/>
+
+
+    </p>
+       <div className="mt-4   flex items-center justify-center px-3 py-1 text-md rounded-full bg-green-500/10 text-green-400 border border-green-500/20">
+          <h1>From February 2026 to Current </h1>
+      </div>
+    </div>
+  </div>
+
 </section>
 
       { /*Contact */}
