@@ -347,7 +347,7 @@ Node.js). <br/> • Built responsive and user-friendly UI components using React
                   <label htmlFor="message">Message:</label>
                   <textarea name='message' required placeholder='Your Message' rows={5} className='bg-gray-800 rounded-lg p-3  focus:outline-none focus:ring-2 focus:ring-blue-600 w-full'></textarea>
                 </div>
-                <button type="submit" className='bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 px-6 w-full'>Send Message</button>
+                <button type="submit" className='bg-blue-600 cursor-pointer hover:bg-blue-700 text-white font-semibold rounded-lg py-3 px-6 w-full'>Send Message</button>
 
 
               </form>
