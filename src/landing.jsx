@@ -35,7 +35,7 @@ const sendEmail = (e) => {
   e.preventDefault();
 
   emailjs.sendForm(
-    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_SERVICE_ID, 
      import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 ,
     formRef.current,
@@ -285,6 +285,24 @@ const sendEmail = (e) => {
   {/* Parent div wrapping all experience cards */}
   <div className="w-full flex flex-wrap lg:flex-nowrap gap-8 mt-10 justify-center">
     {/* 1 */}
+
+    <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
+      <img src={image} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
+      <h2 className="text-3xl font-bold text-green-400 mt-4">Full Stack Developer Falconry360</h2>
+      <p className="text-gray-400 mt-4 leading-relaxed">
+       
+       • Working with a Middle East–based GRC (Governance, Risk & Compliance) company delivering digital
+business solutions. <br/> • Learning and applying Angular (Frontend) and .NET (Backend) technologies in a real-world environment.  <br/> • Gaining practical exposure to GRC domain workflows and systems. <br/> • Assisting in development, debugging, and maintenance of application modules.
+
+
+    </p>
+
+      <div className="mt-4   flex items-center justify-center px-3 py-1 text-md rounded-full bg-green-500/10 text-green-400 border border-green-500/20">
+          <h1>From April 2026 to Current </h1>
+      </div>
+    </div>
+
+        {/* 2 */}
      <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
       <img src={image} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
       <h2 className="text-3xl font-bold text-green-400 mt-4">NHMP Internship</h2>
@@ -300,20 +318,20 @@ const sendEmail = (e) => {
       </div>
     </div>
 
-    {/* 2 */}
+    {/* 3 */}
 <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
       <img src={pvp} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
       <h2 className="text-3xl font-bold text-green-400 mt-4">PVP Internship</h2>
       <p className="text-gray-400 mt-4 leading-relaxed">
        
-        • Working as a Full Stack Developer Intern at Pakistan Venture Point.  <br/> • Developed and maintained full-stack web applications using MERN Stack (MongoDB, Express.js, React.js,
+        • Worked as a Full Stack Developer Intern at Pakistan Venture Point.  <br/> • Developed and maintained full-stack web applications using MERN Stack (MongoDB, Express.js, React.js,
 Node.js). <br/> • Built responsive and user-friendly UI components using React and modern CSS frameworks like Tailwind CSS. <br/> • Integrated authentication & authorization (JWT-based login system)
  <br/>
 
 
     </p>
        <div className="mt-4   flex items-center justify-center px-3 py-1 text-md rounded-full bg-green-500/10 text-green-400 border border-green-500/20">
-          <h1>From February 2026 to Current </h1>
+          <h1>From February 2026 to March 2026 </h1>
       </div>
     </div>
   </div>
@@ -400,6 +418,7 @@ Node.js). <br/> • Built responsive and user-friendly UI components using React
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#MongoDB</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Express.js</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Tailwind CSS</p>
+                  <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Angular</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Machine Learning</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#Python</p>
                   <p className='flex items-center justify-center rounded-full border py-2 px-3'>#ejs</p>
@@ -411,7 +430,7 @@ Node.js). <br/> • Built responsive and user-friendly UI components using React
 
               
                 </div>
-                <a href="/Hunain-Tariq.pdf" download className="block flex gap-3 w-full lg:w-1/2 items-center justify-center text-center mt-6 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-200"><FaDownload size={25}/> Download CV</a>
+                <a href="/M-Hunain-Tariq-CV.pdf" download className="block flex gap-3 w-full lg:w-1/2 items-center justify-center text-center mt-6 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-200"><FaDownload size={25}/> Download CV</a>
                 <div className='mt-6'>
                   <h1 >
                     <SplitText
