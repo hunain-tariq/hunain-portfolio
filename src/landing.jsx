@@ -293,7 +293,8 @@ const sendEmail = (e) => {
       <p className="text-gray-400 mt-4 leading-relaxed">
        
        • Working as Full Stack Developer with a Middle East–based GRC (Governance, Risk & Compliance) company delivering digital
-business solutions. <br/> • Learning and applying Angular and .NET in a real-world environment. <br/> • Assisting in development, debugging, and maintenance of application modules.
+business solutions. <br/> • Learning and applying Angular and .NET in a real-world environment. <br/> • Assisting in development, debugging, and maintenance of application modules. <br/> • Gaining practical exposure to GRC domain workflows.
+
 
 
     </p>
