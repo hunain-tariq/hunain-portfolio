@@ -13,7 +13,8 @@ import jb from './assets/jb.png'
 import hpp from './assets/hpp.png'
 import tu from './assets/tu.png'
 import c from './assets/contact-me.svg'
-import image from './assets/falconry.png'
+import fa360 from './assets/falconry.png'
+import image from './assets/image.png'
 import pvp from './assets/pvp.jpeg'
 
 
@@ -287,7 +288,7 @@ const sendEmail = (e) => {
     {/* 1 */}
 
     <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
-      <img src={image} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
+      <img src={fa360} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
       <h2 className="text-3xl font-bold text-green-400 mt-4">Falconry360</h2>
       <p className="text-gray-400 mt-4 leading-relaxed">
        
