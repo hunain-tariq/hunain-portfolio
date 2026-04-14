@@ -13,7 +13,7 @@ import jb from './assets/jb.png'
 import hpp from './assets/hpp.png'
 import tu from './assets/tu.png'
 import c from './assets/contact-me.svg'
-import image from './assets/image.png'
+import image from './assets/falconry.png'
 import pvp from './assets/pvp.jpeg'
 
 
@@ -288,11 +288,11 @@ const sendEmail = (e) => {
 
     <div className="lg:w-1/3 w-full flex flex-col justify-center text-white bg-[#020617]/80 border border-white/10 rounded-xl p-5 hover:border-green-500/60 transition duration-300 hover:shadow-[0_0_25px_rgba(34,197,94,0.2)]">
       <img src={image} alt="Jobs Bridge" className="rounded-lg w-full h-56 object-cover hover:scale-105 transition"/>
-      <h2 className="text-3xl font-bold text-green-400 mt-4">Full Stack Developer Falconry360</h2>
+      <h2 className="text-3xl font-bold text-green-400 mt-4">Falconry360</h2>
       <p className="text-gray-400 mt-4 leading-relaxed">
        
-       • Working with a Middle East–based GRC (Governance, Risk & Compliance) company delivering digital
-business solutions. <br/> • Learning and applying Angular (Frontend) and .NET (Backend) technologies in a real-world environment.  <br/> • Gaining practical exposure to GRC domain workflows and systems. <br/> • Assisting in development, debugging, and maintenance of application modules.
+       • Working as Full Stack Developer with a Middle East–based GRC (Governance, Risk & Compliance) company delivering digital
+business solutions. <br/> • Learning and applying Angular and .NET in a real-world environment. <br/> • Assisting in development, debugging, and maintenance of application modules.
 
 
     </p>
